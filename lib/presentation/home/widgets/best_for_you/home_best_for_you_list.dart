@@ -13,23 +13,28 @@ class HomeBestForYouList extends ProjectCubitWidget<HomeState, HomeCubit> {
 
   @override
   Widget renderChild(BuildContext context, HomeCubit current) {
-    return ListView.separated(
-      shrinkWrap: true,
-      primary: false,
-      itemCount: current.state.bestForYouHouseList.length,
-      separatorBuilder: (context, index) {
-        return ProjectSpace.regular;
-      },
-      itemBuilder: (context, index) {
-        final item = current.state.bestForYouHouseList[index];
-        return HomeBestForYouItem(
-          name: item.name,
-          imagePath: item.imagePath,
-          price: item.priceAYear,
-          countBedroom: item.countBedRoom,
-          countBathroom: item.countBathRoom,
-        );
-      },
+    return Column(
+      children: [
+        ListView.separated(
+          shrinkWrap: true,
+          primary: false,
+          itemCount: current.state.bestForYouHouseList.length,
+          separatorBuilder: (context, index) {
+            return ProjectSpace.regular;
+          },
+          itemBuilder: (context, index) {
+            final item = current.state.bestForYouHouseList[index];
+            return HomeBestForYouItem(
+              name: item.name,
+              imagePath: item.imagePath,
+              price: item.priceAYear,
+              countBedroom: item.countBedRoom,
+              countBathroom: item.countBathRoom,
+            );
+          },
+        ),
+        ProjectSpace.regular,
+      ],
     );
   }
 }

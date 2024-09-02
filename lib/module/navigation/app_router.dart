@@ -7,9 +7,7 @@ part 'app_router.gr.dart';
 
 @AutoRouterConfig()
 @singleton
-class AppRouter extends _$AppRouter {
-  @override
-  RouteType get defaultRouteType => const RouteType.material();
+class AppRouter extends RootStackRouter  {
 
   @override
   List<AutoRoute> get routes => [

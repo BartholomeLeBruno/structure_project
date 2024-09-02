@@ -27,8 +27,12 @@ mixin _$BestForYouHouse {
   String get name => throw _privateConstructorUsedError;
   String get host => throw _privateConstructorUsedError;
 
+  /// Serializes this BestForYouHouse to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of BestForYouHouse
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $BestForYouHouseCopyWith<BestForYouHouse> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -58,6 +62,8 @@ class _$BestForYouHouseCopyWithImpl<$Res, $Val extends BestForYouHouse>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of BestForYouHouse
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -122,6 +128,8 @@ class __$$BestForYouHouseImplCopyWithImpl<$Res>
       _$BestForYouHouseImpl _value, $Res Function(_$BestForYouHouseImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of BestForYouHouse
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -210,12 +218,14 @@ class _$BestForYouHouseImpl implements _BestForYouHouse {
             (identical(other.host, host) || other.host == host));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, countBedRoom, countBathRoom,
       priceAYear, imagePath, name, host);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BestForYouHouse
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BestForYouHouseImplCopyWith<_$BestForYouHouseImpl> get copyWith =>
@@ -254,8 +264,11 @@ abstract class _BestForYouHouse implements BestForYouHouse {
   String get name;
   @override
   String get host;
+
+  /// Create a copy of BestForYouHouse
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BestForYouHouseImplCopyWith<_$BestForYouHouseImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

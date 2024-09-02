@@ -12,51 +12,51 @@ dependencies:
     sdk: flutter
 
   #https://pub.dev/packages/auto_route/changelog
-  auto_route: 8.0.3
+  auto_route: 9.2.2
   #https://pub.dev/packages/cupertino_icons/changelog
-  cupertino_icons: 1.0.6
+  cupertino_icons: 1.0.8
   #https://pub.dev/packages/auto_size_text/changelog
   auto_size_text: 3.0.0
   #https://pub.dev/packages/flutter_bloc/changelog
-  flutter_bloc: 8.1.5
+  flutter_bloc: 8.1.6
   #https://pub.dev/packages/freezed_annotation/changelog
-  freezed_annotation: 2.4.1
+  freezed_annotation: 2.4.4
   #https://pub.dev/packages/get_it/changelog
-  get_it: 7.2.0
+  get_it: 7.7.0
   #https://pub.dev/packages/injectable/changelog
-  injectable: 2.2.0
+  injectable: 2.4.4
   #https://pub.dev/packages/json_annotation/changelog
-  json_annotation: 4.8.1
+  json_annotation: 4.9.0
   #https://pub.dev/packages/logger/changelog
-  logger: 2.2.0
+  logger: 2.4.0
   #https://pub.dev/packages/retrofit/changelog
-  retrofit: 4.1.0
+  retrofit: 4.2.0
   #https://pub.dev/packages/flutter_screenutil/changelog
-  flutter_screenutil: 5.9.0
+  flutter_screenutil: 5.9.3
   #https://pub.dev/packages/dartz/changelog
   dartz: 0.10.1
   #https://pub.dev/packages/mocktail/changelog
-  mocktail: 1.0.3
+  mocktail: 1.0.4
 
 dev_dependencies:
   #https://pub.dev/packages/auto_route_generator/changelog
-  auto_route_generator: 8.0.0
+  auto_route_generator: 9.0.0
   flutter_test:
     sdk: flutter
   #https://pub.dev/packages/bloc_test/changelog
   bloc_test: 9.1.7
   #https://pub.dev/packages/build_runner/changelog
-  build_runner: 2.4.9
+  build_runner: 2.4.12
   #https://pub.dev/packages/flutter_lints/changelog
-  flutter_lints: 3.0.2
+  flutter_lints: 4.0.0
   #https://pub.dev/packages/freezed/changelog
-  freezed: 2.5.1
+  freezed: 2.5.7
   #https://pub.dev/packages/injectable_generator/changelog
-  injectable_generator: 2.2.0
+  injectable_generator: 2.6.2
   #https://pub.dev/packages/json_serializable/changelog
-  json_serializable: 6.7.1
+  json_serializable: 6.8.0
   #https://pub.dev/packages/retrofit_generator/changelog
-  retrofit_generator: 8.1.0
+  retrofit_generator: 8.2.1
 
 
 flutter:
@@ -67,7 +67,7 @@ flutter:
     - assets/icon/
     - assets/best-for-you/
   fonts:
-    - family: Ralewat
+    - family: Raleway
       fonts:
         - asset: assets/fonts/raleway/Raleway-Black.ttf
         - asset: assets/fonts/raleway/Raleway-BlackItalic.ttf
