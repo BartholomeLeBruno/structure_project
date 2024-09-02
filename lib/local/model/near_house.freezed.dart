@@ -25,8 +25,12 @@ mixin _$NearHouse {
   String get name => throw _privateConstructorUsedError;
   String get host => throw _privateConstructorUsedError;
 
+  /// Serializes this NearHouse to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of NearHouse
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $NearHouseCopyWith<NearHouse> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -49,6 +53,8 @@ class _$NearHouseCopyWithImpl<$Res, $Val extends NearHouse>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of NearHouse
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -97,6 +103,8 @@ class __$$NearHouseImplCopyWithImpl<$Res>
       _$NearHouseImpl _value, $Res Function(_$NearHouseImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of NearHouse
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -165,11 +173,13 @@ class _$NearHouseImpl implements _NearHouse {
             (identical(other.host, host) || other.host == host));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, distancy, imagePath, name, host);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of NearHouse
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$NearHouseImplCopyWith<_$NearHouseImpl> get copyWith =>
@@ -201,8 +211,11 @@ abstract class _NearHouse implements NearHouse {
   String get name;
   @override
   String get host;
+
+  /// Create a copy of NearHouse
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$NearHouseImplCopyWith<_$NearHouseImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -37,7 +37,7 @@ class HomeNearFromYouSlider extends ProjectCubitWidget<HomeState, HomeCubit> {
                 homeNearFromYouSliderItem,
               ],
             );
-          } else if (index == current.state.styles.length - 1) {
+          } else if (index == current.state.nearHouseList.length - 1) {
             return Row(
               children: [
                 homeNearFromYouSliderItem,

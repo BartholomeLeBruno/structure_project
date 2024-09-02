@@ -21,9 +21,9 @@ HouseDTO _$HouseDTOFromJson(Map<String, dynamic> json) => HouseDTO(
       imageUrl: json['imageUrl'] as String?,
       name: json['name'] as String?,
       host: json['host'] as String?,
-      countBedRoom: json['countBedRoom'] as int?,
-      countBathRoom: json['countBathRoom'] as int?,
-      priceAYear: json['priceAYear'] as int?,
+      countBedRoom: (json['countBedRoom'] as num?)?.toInt(),
+      countBathRoom: (json['countBathRoom'] as num?)?.toInt(),
+      priceAYear: (json['priceAYear'] as num?)?.toInt(),
       distancy: (json['distancy'] as num?)?.toDouble(),
     );
 

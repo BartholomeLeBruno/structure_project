@@ -19,7 +19,9 @@ mixin _$Failure {
   Error? get error => throw _privateConstructorUsedError;
   List<Error>? get errors => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Failure
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $FailureCopyWith<Failure> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -43,6 +45,8 @@ class _$FailureCopyWithImpl<$Res, $Val extends Failure>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Failure
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -61,6 +65,8 @@ class _$FailureCopyWithImpl<$Res, $Val extends Failure>
     ) as $Val);
   }
 
+  /// Create a copy of Failure
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ErrorCopyWith<$Res>? get error {
@@ -95,6 +101,8 @@ class __$$FailureImplCopyWithImpl<$Res>
       _$FailureImpl _value, $Res Function(_$FailureImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Failure
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -150,7 +158,9 @@ class _$FailureImpl implements _Failure {
   int get hashCode => Object.hash(
       runtimeType, error, const DeepCollectionEquality().hash(_errors));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Failure
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FailureImplCopyWith<_$FailureImpl> get copyWith =>
@@ -165,8 +175,11 @@ abstract class _Failure implements Failure {
   Error? get error;
   @override
   List<Error>? get errors;
+
+  /// Create a copy of Failure
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FailureImplCopyWith<_$FailureImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -183,7 +196,9 @@ mixin _$Error {
   String? get position => throw _privateConstructorUsedError;
   String? get exceptionMessage => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Error
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ErrorCopyWith<Error> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -214,6 +229,8 @@ class _$ErrorCopyWithImpl<$Res, $Val extends Error>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Error
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -295,6 +312,8 @@ class __$$ErrorImplCopyWithImpl<$Res>
       _$ErrorImpl _value, $Res Function(_$ErrorImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Error
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -412,7 +431,9 @@ class _$ErrorImpl implements _Error {
   int get hashCode => Object.hash(runtimeType, type, reason, message,
       subjectType, subject, errorCode, language, position, exceptionMessage);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Error
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ErrorImplCopyWith<_$ErrorImpl> get copyWith =>
@@ -449,8 +470,11 @@ abstract class _Error implements Error {
   String? get position;
   @override
   String? get exceptionMessage;
+
+  /// Create a copy of Error
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ErrorImplCopyWith<_$ErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
